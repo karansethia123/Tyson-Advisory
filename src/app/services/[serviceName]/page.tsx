@@ -5,11 +5,17 @@ import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { servicesData } from "@/lib/service-data";
 
+export const generateStaticParams = () => {
+  return ["Data_and_Analytics", "Cloud", "AI_and_Automation", "Managed_Services", "Application_Services"].map(service => {
+    return { serviceName: service }
+  })
+}
+
 type Props = {
   params: Promise<{ serviceName: string }>
 }
 
-const services = ["Data and Analytics" , "Cloud" , "AI and Automation" , "Managed Services" , "Application Services"]
+const services = ["Data and Analytics", "Cloud", "AI and Automation", "Managed Services", "Application Services"]
 
 type ServiceType = "Data and Analytics" | "Cloud" | "AI and Automation" | "Managed Services" | "Application Services"
 
@@ -32,10 +38,10 @@ const ServicePage = async ({ params }: Props) => {
         </span>
         <div className="flex flex-row flex-wrap md:flex-col gap-5 flex-1 justify-evenly w-full">
           {servicesData.find(se => se.id === serviceName)?.details.map((d, index) => (
-          <span key={index} className="flex flex-col gap-2 border-s-2 border-s-black p-3 ps-6">
-            <p className="text-2xl md:text-2xl font-header font-bold">{d.title}</p>
-            <p className="text-xs md:text-sm font-content tracking-wide">{d.description}</p>
-          </span>
+            <span key={index} className="flex flex-col gap-2 border-s-2 border-s-black p-3 ps-6">
+              <p className="text-2xl md:text-2xl font-header font-bold">{d.title}</p>
+              <p className="text-xs md:text-sm font-content tracking-wide">{d.description}</p>
+            </span>
           ))}
         </div>
       </div>
@@ -56,7 +62,7 @@ const ServicePage = async ({ params }: Props) => {
     <section className="flex w-full flex-col py-8">
       <h3 className="w-full text-center font-header font-black text-xl md:text-3xl">Check out more services</h3>
       <div className="py-10 w-full grid grid-cols-2 md:grid-cols-4 gap-3 p-3">
-        {services.filter(se => se !== serviceName.replaceAll('_', " ")).map((se,index) => (
+        {services.filter(se => se !== serviceName.replaceAll('_', " ")).map((se, index) => (
           <Link href={se.replaceAll(" ", "_")} key={index}>
             <Card className="flex items-center justify-center">{se}</Card>
           </Link>
