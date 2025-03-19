@@ -3,11 +3,11 @@ import {
   FormItem,
   FormLabel,
   FormControl
-} from '../form'
+} from '../ui/form'
 
 import { useFormContext } from "react-hook-form";
-import { RadioGroup, RadioGroupItem } from '../radio-group';
-import { Card } from '../card';
+import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
+import { Card } from '../ui/card';
 
 type DataObj = {
   title: string,
@@ -39,7 +39,7 @@ const RadioGroupWithLabel = <S,>({ fieldTitle, nameInSchema, data }: Props<S>) =
             className="grid w-full grid-cols-3 gap-3 pt-2"
           >
             {data.map(value => (
-              <FormItem>
+              <FormItem key={value.title}>
                 <FormLabel className="[&:has([data-state=checked])>div]:border-blue-600">
                   <FormControl>
                     <RadioGroupItem value={value.score.toString()} className="sr-only" />
