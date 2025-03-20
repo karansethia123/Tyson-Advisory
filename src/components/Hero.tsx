@@ -3,6 +3,7 @@ import { Button } from "./ui/button"
 const Hero = () => {
   return (
     <main className="size-full flex flex-col md:flex-row p-5 md:p-10 lg:p-5 items-center justify-center h-[100svh] md:h-[95svh] gap-2 relative snap-start pt-[5vh]">
+
       <div
         aria-hidden="true"
         className="absolute inset-x-0 max-h-[100vh] top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-bottom-20"

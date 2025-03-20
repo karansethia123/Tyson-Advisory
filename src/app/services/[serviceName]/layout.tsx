@@ -3,4 +3,3 @@ const ServiceLayout = ({ children }: { children: React.ReactNode }) => {
 };
 
 export default ServiceLayout;
-
