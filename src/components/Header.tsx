@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <div
-      className={`w-full z-20 fixed text-white h-[8vh] px-5 md:px-10 xl:px-20 py-5 flex justify-between text-[14px] font-stretch-150% items-end font-header uppercase leading-5 tracking-wide transition-all duration-300 ${scrolled ? "bg-black shadow-md" : "bg-transparent backdrop-blur-sm"
+      className={`w-full z-40 fixed text-white h-[8vh] px-5 md:px-10 xl:px-20 py-5 flex justify-between text-[14px] font-stretch-150% items-end font-header uppercase leading-5 tracking-wide transition-all duration-300 ${scrolled ? "bg-black shadow-md" : "bg-transparent backdrop-blur-sm"
         }`}
     >
       <Link href="/" className="font-header tracking-wide text-xl h-7 font-bold">
