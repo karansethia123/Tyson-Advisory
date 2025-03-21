@@ -9,14 +9,14 @@ import BrandCarousel from "./BrandCarousal";
 export default function Home() {
 
    const brandLogos = [
-    { src: "/brand-1.png", alt: "Brand 1" },
-    { src: "/brand-2.png", alt: "Brand 2" },
-    { src: "/brand-3.png", alt: "Brand 3" },
-    { src: "/brand-4.png", alt: "Brand 4" },
-    { src: "/brand-5.png", alt: "Brand 5" },
-    { src: "/brand-6.png", alt: "Brand 6" },
-    { src: "/brand-7.png", alt: "Brand 7" },
-    { src: "/brand-7.png", alt: "Brand 8" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9xcBFT4ALTuWjGx1pbi625nRrAha3EzMPZKDs", alt: "Brand 1" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9w2rbtKcY3AepVWHBJvRKrMFiwCb9qZxSlIcT", alt: "Brand 2" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9OaZyVNiVixKW8pD6Roj0QGmycFvNkb51sXBd", alt: "Brand 3" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9cCvXOzx3mstD4JAzkpPHjyhYqC1geQLbTXnx", alt: "Brand 4" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9mJAuBE8BESupc3KwDzo4tbeGVHYWUAdQyl5j", alt: "Brand 5" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9lnAUjyea9GPbsBc8qemrgU21ypdoCI6HEfSR", alt: "Brand 6" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9AofqVAuO4h9zUp1a6MJqneWdFYX87yo52wmj", alt: "Brand 7" },
+    { src: "https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9Uskn3NOBLZFXglqw2pirfk7VabSWnUJoK5zm", alt: "Brand 8" },
   ]
 
   return (
