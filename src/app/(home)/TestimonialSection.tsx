@@ -37,8 +37,8 @@ export default function TestimonialSection() {
     <section className="py-16 px-4 md:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">What Our Clients Say</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-header font-stretch-200% font-bold tracking-tight mb-2">What Our Clients Say</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto font-content tracking-wide">
             Discover how our IT consulting services have helped businesses across industries solve complex challenges
             and achieve their technology goals.
           </p>

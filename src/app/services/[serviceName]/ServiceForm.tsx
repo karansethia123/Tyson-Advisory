@@ -33,7 +33,7 @@ const ServiceForm = ({ serviceType }: { serviceType: "Data and Analytics" | "Clo
     <div className="flex items-center gap-2">
       <span className="hidden md:block w-3/5 rounded-xl">
         <Image src="https://86v8u6agau.ufs.sh/f/A17KOoeuO4h9mcFk6DR8BESupc3KwDzo4tbeGVHYWUAdQyl5"
-        width="800" height="800" alt="Manage" className="rounded-xl"/>
+        width="800" height="800" alt="Manage" className="aspect-[4/3] rounded-xl"/>
       </span>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(submitHandler)} className="flex-1 flex flex-col gap-2 p-4">

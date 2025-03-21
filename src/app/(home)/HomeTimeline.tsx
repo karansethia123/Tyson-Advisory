@@ -40,7 +40,7 @@ const HomeTimeline = () => {
 
       <div className="w-full mx-auto px-8 py-16 md:py-24">
         <div className="flex flex-col gap-2 py-5">
-          <h3 className="font-header text-4xl font-semibold uppercase">Our secret sauce</h3>
+          <h3 className="font-header font-stretch-200% text-4xl font-semibold uppercase">Our secret sauce</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 z-30">

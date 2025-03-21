@@ -152,7 +152,7 @@ export default function HeroCarousel() {
                   </div>
                 ))}
               </div>
-              <h1 className="font-header mb-4 max-w-4xl text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl">
+              <h1 className="font-header mb-4 max-w-4xl text-5xl font-bold font-stretch-200% text-white sm:text-6xl md:text-7xl">
                 {section.title}
               </h1>
               {section.subtitle && (

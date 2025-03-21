@@ -19,7 +19,7 @@ const TestimonialCard = ({ initials, avatarSrc, company, title, name, quote }: P
       <Quote className="h-8 w-8 text-primary opacity-80" />
     </CardHeader>
     <CardContent className="flex-grow">
-      <p className="text-muted-foreground italic">{quote}</p>
+      <p className="text-muted-foreground font-content tracking-wide text-sm italic">{quote}</p>
     </CardContent>
     <CardFooter className="pt-4 border-t flex items-center gap-4">
       <Avatar>
@@ -27,8 +27,8 @@ const TestimonialCard = ({ initials, avatarSrc, company, title, name, quote }: P
         <AvatarFallback>{initials}</AvatarFallback>
       </Avatar>
       <div>
-        <p className="font-medium">{name}</p>
-        <CardDescription>
+        <p className="font-medium font-header">{name}</p>
+        <CardDescription className="font-content">
           {title}, {company}
         </CardDescription>
       </div>

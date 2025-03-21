@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <div
-      className={`w-full z-20 fixed text-white h-[8vh] px-5 md:px-10 xl:px-20 py-5 flex justify-between text-[14px] items-end font-header uppercase leading-5 tracking-wide transition-all duration-300 ${scrolled ? "bg-black shadow-md" : "bg-transparent backdrop-blur-sm"
+      className={`w-full z-20 fixed text-white h-[8vh] px-5 md:px-10 xl:px-20 py-5 flex justify-between text-[14px] font-stretch-150% items-end font-header uppercase leading-5 tracking-wide transition-all duration-300 ${scrolled ? "bg-black shadow-md" : "bg-transparent backdrop-blur-sm"
         }`}
     >
       <Link href="/" className="font-header tracking-wide text-xl h-7 font-bold">
@@ -79,11 +79,11 @@ const Header = () => {
               </AccordionItem>
             </Accordion>
             <Separator />
-            <Link href="#" className="py-2">
+            <Link href="/about-us" className="py-2">
               Who we are
             </Link>
             <Separator />
-            <Link href="#" className="py-2">
+            <Link href="/contact-us" className="py-2">
               Reach us
             </Link>
           </div>
@@ -131,7 +131,7 @@ const Header = () => {
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
-        <Link href="#" className="group transition duration-300 flex flex-col gap-1">
+        <Link href="/about-us" className="group transition duration-300 flex flex-col gap-1">
           Who we are
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
         </Link>

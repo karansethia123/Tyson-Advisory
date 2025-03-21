@@ -4,9 +4,11 @@ import Image from "next/image"
 import { motion } from "motion/react";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 interface Card {
   id: string
+  link: string,
   title: string
   description: string
   image: string
@@ -15,6 +17,7 @@ interface Card {
 const cards: Card[] = [
   {
     id: "card-1",
+    link: "/services/Data_and_Analytics",
     title: "Data and Analytics",
     description:
       "Our strategic consulting services help businesses identify opportunities, overcome challenges, and achieve sustainable growth in today's competitive landscape.",
@@ -22,6 +25,7 @@ const cards: Card[] = [
   },
   {
     id: "card-2",
+    link: "/services/Cloud",
     title: "Cloud",
     description:
       "Leverage cutting-edge technologies to revolutionize your business processes, enhance customer experiences, and drive operational efficiency.",
@@ -29,6 +33,7 @@ const cards: Card[] = [
   },
   {
     id: "card-3",
+    link: "/services/AI_and_Automation",
     title: "AI and Automation",
     description:
       "Turn your data into actionable insights with our advanced analytics solutions, helping you make informed decisions and predict future trends.",
@@ -36,6 +41,7 @@ const cards: Card[] = [
   },
   {
     id: "card-4",
+    link: "/services/Managed_Services",
     title: "Managed and Application Services",
     description:
       "Protect your digital assets with our comprehensive security services, designed to identify vulnerabilities and implement robust protection measures.",
@@ -63,7 +69,9 @@ export default function ServiceCards() {
       <div className="w-full px-4 md:px-6 z-20">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {cards.map((card, index) => (
-            <HoverCard key={card.id} card={card} index={index} />
+            <Link href={card.link} key={card.id}>
+              <HoverCard  card={card} index={index} />
+            </Link>
           ))}
         </div>
       </div>
@@ -78,7 +86,7 @@ function HoverCard({ card, index }: { card: Card; index: number }) {
   return (
     <motion.div
       ref={ref}
-      className="relative h-[300px] overflow-hidden rounded-lg shadow-lg shadow-gray-700 border border-gray-700"
+      className="relative h-[180px] sm:h-[300px] overflow-hidden rounded-lg shadow-lg shadow-gray-700 border border-gray-700"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       initial={{ opacity: 0, y: 20 }}
