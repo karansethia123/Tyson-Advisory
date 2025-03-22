@@ -1,6 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { BadgeCheck } from "lucide-react"
-import Image from 'next/image'
 import FrameworkDescription from "./FrameworkDescription"
 
 const frameworks = [
