@@ -1,5 +1,5 @@
-const BlogLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div className=" mx-auto pt-[8vh]">{children}</div>;
+const BlogListLayout = ({ children }: { children: React.ReactNode }) => {
+  return <div className="max-w-[1280px] mx-auto pt-[8vh]">{children}</div>;
 };
 
-export default BlogLayout;
+export default BlogListLayout;

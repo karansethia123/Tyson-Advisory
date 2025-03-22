@@ -1,5 +1,5 @@
 const AboutUsLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div className="max-w-[1280px] mx-auto pt-[5vh]">{children}</div>;
+  return <div className="max-w-[1280px] mx-auto pt-[8vh]">{children}</div>;
 };
 
 export default AboutUsLayout;

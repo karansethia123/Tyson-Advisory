@@ -49,7 +49,7 @@ const Header = () => {
       </Link>
       <Sheet>
         <SheetTrigger asChild>
-          <Button type="button" variant="ghost" size="icon" className="visible md:invisible">
+          <Button type="button" variant="ghost" size="icon" className="visible lg:invisible">
             <Menu />
           </Button>
         </SheetTrigger>
@@ -89,7 +89,7 @@ const Header = () => {
           </div>
         </SheetContent>
       </Sheet>
-      <nav className="-mt-2 items-center gap-4 font-content hidden md:flex">
+      <nav className="-mt-2 items-center gap-6 font-content hidden lg:flex">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <p className="cursor-pointer group transition duration-300 flex flex-col gap-1">
@@ -131,8 +131,20 @@ const Header = () => {
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
+        <Link href="/blog" className="group transition duration-300 flex flex-col gap-1">
+          News and Case Studies
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+        </Link>
+        <Link href="/frameworks" className="group transition duration-300 flex flex-col gap-1">
+          Frameworks
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+        </Link>
         <Link href="/about-us" className="group transition duration-300 flex flex-col gap-1">
           Who we are
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+        </Link>
+        <Link href="/partner" className="group transition duration-300 flex flex-col gap-1">
+          Partner
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
         </Link>
         <Link href="/contact-us" className="group transition duration-300 flex flex-col gap-1">
